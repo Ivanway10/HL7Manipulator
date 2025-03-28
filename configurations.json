@@ -1,0 +1,25 @@
+{
+    "config-prueba": [
+        {
+            "action": "delete_segment",
+            "segment": "AIP"
+        },
+        {
+            "action": "add_segment",
+            "new_segment": "NK1",
+            "position": 22
+        },
+        {
+            "action": "modify_field",
+            "segment": "MSH",
+            "field_index": 3,
+            "new_value": "PRAXISINTERFACEMANAGER"
+        },
+        {
+            "action": "copy_value",
+            "segment": "MSH",
+            "source_field": 3,
+            "dest_field": 7
+        }
+    ]
+}
