@@ -178,3 +178,59 @@
 2025-03-28 01:40:25,840 - INFO - Monitorización detenida.
 2025-03-28 01:41:46,238 - INFO - Monitorización detenida.
 2025-03-28 01:41:46,238 - INFO - Monitorización detenida.
+2025-03-30 20:23:49,970 - INFO - Aplicación iniciada.
+2025-03-30 20:24:49,199 - INFO - Directorio de entrada: C:/Users/ivanw/Desktop/origen
+2025-03-30 20:24:52,638 - INFO - Configuración activa: config-prueba
+2025-04-04 16:36:40,399 - INFO - Aplicación iniciada.
+2025-04-04 16:37:56,073 - INFO - Configuraciones guardadas.
+2025-04-04 16:37:56,074 - INFO - Nueva configuración 'advacemd' creada.
+2025-04-04 16:38:01,235 - INFO - Configuración activa: advacemd
+2025-04-04 16:39:37,536 - INFO - Configuraciones guardadas.
+2025-04-04 16:39:37,536 - INFO - Configuración 'advacemd' actualizada.
+2025-04-04 16:39:43,787 - INFO - Configuración activa: config-prueba
+2025-04-06 19:44:25,957 - INFO - Aplicación iniciada.
+2025-04-06 19:45:59,053 - INFO - Directorio de entrada: C:/Users/ivanw/Desktop/origen
+2025-04-06 19:46:06,862 - INFO - Directorio de salida: C:/Users/ivanw/Desktop/destino
+2025-04-06 19:46:19,329 - INFO - Carpeta de backups: C:/Users/ivanw/Desktop/backups
+2025-04-06 19:46:31,926 - INFO - Configuración activa: advacemd
+2025-04-06 19:46:52,366 - INFO - Configuración activa: config-prueba
+2025-04-06 19:57:05,831 - INFO - Configuraciones guardadas.
+2025-04-06 19:57:05,832 - INFO - Configuración 'config-prueba' actualizada.
+2025-04-06 19:57:11,495 - INFO - Iniciada la monitorización en: C:/Users/ivanw/Desktop/origen
+2025-04-06 19:57:11,496 - INFO - Monitorización iniciada.
+2025-04-06 19:57:29,704 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\S12queSiPasó.hl7
+2025-04-06 19:57:29,707 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\S12queSiPasó.hl7
+2025-04-06 19:57:29,723 - INFO - Eliminado segmento: AIP
+2025-04-06 19:57:29,723 - INFO - Segmento agregado en la posición 7: ['NK1']
+2025-04-06 19:57:29,723 - INFO - Campo modificado en segmento MSH: índice 3 de 'PRAXISINTERFACEMANAGER' a 'PRAXISINTERFACEMANAGER'
+2025-04-06 19:57:29,724 - INFO - Valor copiado de MSH[2] a NK1[2]: OPENPM
+2025-04-06 19:57:29,724 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\S12queSiPasó.hl7
+2025-04-06 19:57:29,742 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\S12queSiPasó.hl7
+2025-04-06 19:57:29,742 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\s12-SIU-example.hl7
+2025-04-06 19:57:29,755 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\s12-SIU-example.hl7
+2025-04-06 19:57:29,785 - INFO - Eliminado segmento: AIP
+2025-04-06 19:57:29,785 - INFO - Segmento agregado en la posición 8: ['NK1']
+2025-04-06 19:57:29,785 - INFO - Campo modificado en segmento MSH: índice 3 de 'PRAXISINTERFACEMANAGER' a 'PRAXISINTERFACEMANAGER'
+2025-04-06 19:57:29,786 - INFO - Valor copiado de MSH[2] a NK1[2]: ProClaim
+2025-04-06 19:57:29,786 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\s12-SIU-example.hl7
+2025-04-06 19:57:29,790 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\s12-SIU-example.hl7
+2025-04-06 19:57:29,790 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\s12.hl7
+2025-04-06 19:57:29,791 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\s12.hl7
+2025-04-06 19:57:29,807 - INFO - Eliminado segmento: AIP
+2025-04-06 19:57:29,807 - INFO - Segmento agregado en la posición 6: ['NK1']
+2025-04-06 19:57:29,807 - INFO - Campo modificado en segmento MSH: índice 3 de 'PRAXISINTERFACEMANAGER' a 'PRAXISINTERFACEMANAGER'
+2025-04-06 19:57:29,807 - INFO - Valor copiado de MSH[2] a NK1[2]: PraxisEMR
+2025-04-06 19:57:29,809 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\s12.hl7
+2025-04-06 19:57:29,811 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\s12.hl7
+2025-04-06 19:57:29,812 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\S12queNoPasó.hl7
+2025-04-06 19:57:29,812 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\S12queNoPasó.hl7
+2025-04-06 19:57:29,835 - INFO - Eliminado segmento: AIP
+2025-04-06 19:57:29,836 - INFO - Segmento agregado en la posición 6: ['NK1']
+2025-04-06 19:57:29,836 - INFO - Campo modificado en segmento MSH: índice 3 de 'PRAXISINTERFACEMANAGER' a 'PRAXISINTERFACEMANAGER'
+2025-04-06 19:57:29,836 - INFO - Valor copiado de MSH[2] a NK1[2]: OPENPM
+2025-04-06 19:57:29,838 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\S12queNoPasó.hl7
+2025-04-06 19:57:29,841 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\S12queNoPasó.hl7
+2025-04-06 20:07:54,222 - INFO - Iniciada la monitorización en: C:/Users/ivanw/Desktop/origen
+2025-04-06 20:07:54,223 - INFO - Monitorización iniciada.
+2025-04-06 20:08:05,051 - INFO - Monitorización detenida.
+2025-04-06 20:08:05,052 - INFO - Monitorización detenida.

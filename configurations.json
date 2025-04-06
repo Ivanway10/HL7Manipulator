@@ -17,9 +17,27 @@
         },
         {
             "action": "copy_value",
-            "segment": "MSH",
-            "source_field": 3,
-            "dest_field": 7
+            "source_segment": "MSH",
+            "source_field": 2,
+            "dest_segment": "NK1",
+            "dest_field": 2
+        }
+    ],
+    "advacemd": [
+        {
+            "action": "delete_segment",
+            "segment": "nk1"
+        },
+        {
+            "action": "add_segment",
+            "new_segment": "OBX",
+            "position": 11
+        },
+        {
+            "action": "copy_value",
+            "segment": "IN1",
+            "source_field": 36,
+            "dest_field": 49
         }
     ]
 }
