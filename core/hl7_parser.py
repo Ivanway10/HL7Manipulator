@@ -63,6 +63,7 @@ def modify_field(segments, segment_name, field_index, new_value):
 def reorder_fields(segments, segment_name, new_order):
     """
     Reordena los campos de un segmento específico según un nuevo orden.
+    Si el segmento no tiene suficientes campos, se rellenan con cadenas vacías.
 
     Args:
         segments (list): Lista de segmentos.
@@ -74,9 +75,10 @@ def reorder_fields(segments, segment_name, new_order):
     """
     for seg in segments:
         if seg[0] == segment_name:
-            if len(new_order) != len(seg):
-                logging.warning(f"El nuevo orden no coincide con el número de campos en el segmento {segment_name}.")
-                continue
+            # Rellenar con cadenas vacías si es necesario
+            max_index = max(new_order)
+            if len(seg) <= max_index:
+                seg.extend([''] * (max_index - len(seg) + 1))
             seg[:] = [seg[i] for i in new_order]
             logging.info(f"Campos reordenados en segmento {segment_name}: nuevo orden {new_order}")
             break
@@ -104,7 +106,6 @@ def copy_value(segments, from_segment, source_field, to_segment, dest_field):
     if source_value is not None:
         for seg in segments:
             if seg[0] == to_segment:
-                # Asegurarse de que la lista tenga suficientes elementos
                 while len(seg) <= dest_field:
                     seg.append('')
                 seg[dest_field] = source_value

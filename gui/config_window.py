@@ -2,6 +2,13 @@ from PyQt5 import QtWidgets, QtCore
 import json
 
 class ConfigWindow(QtWidgets.QDialog):
+    """
+    Ventana de diálogo para gestionar (editar/agregar/eliminar) las reglas de una configuración.
+
+    Args:
+        config_name (str): Nombre de la configuración a editar.
+        rules (list): Lista de reglas asociadas.
+    """
     def __init__(self, config_name, rules, parent=None):
         super().__init__(parent)
         self.setWindowTitle(f"Editar Configuración: {config_name}")
@@ -12,12 +19,14 @@ class ConfigWindow(QtWidgets.QDialog):
     def init_ui(self):
         layout = QtWidgets.QVBoxLayout()
 
+        # Sección de reglas existentes
         rules_label = QtWidgets.QLabel("Reglas existentes:")
         layout.addWidget(rules_label)
         self.rules_list = QtWidgets.QListWidget()
         self.refresh_rules()
         layout.addWidget(self.rules_list)
 
+        # Botones para editar o eliminar reglas
         btn_layout = QtWidgets.QHBoxLayout()
         self.edit_button = QtWidgets.QPushButton("Editar Regla")
         self.delete_button = QtWidgets.QPushButton("Eliminar Regla")
@@ -28,25 +37,32 @@ class ConfigWindow(QtWidgets.QDialog):
         self.edit_button.clicked.connect(self.edit_rule)
         self.delete_button.clicked.connect(self.delete_rule)
 
+        # Separador visual
         separator = QtWidgets.QFrame()
         separator.setFrameShape(QtWidgets.QFrame.HLine)
         separator.setFrameShadow(QtWidgets.QFrame.Sunken)
         layout.addWidget(separator)
 
+        # Sección para agregar una nueva regla con controles gráficos
         new_rule_group = QtWidgets.QGroupBox("Agregar Nueva Regla")
         new_rule_layout = QtWidgets.QVBoxLayout()
 
+        # Seleccionar la acción
         action_layout = QtWidgets.QHBoxLayout()
         action_label = QtWidgets.QLabel("Acción:")
         self.rule_type_combo = QtWidgets.QComboBox()
-        self.rule_type_combo.addItems(["delete_segment", "add_segment", "modify_field", "reorder_fields", "copy_value"])
+        self.rule_type_combo.addItems([
+            "delete_segment", "add_segment", "modify_field",
+            "reorder_fields", "copy_value", "agregar_campos"
+        ])
         action_layout.addWidget(action_label)
         action_layout.addWidget(self.rule_type_combo)
         new_rule_layout.addLayout(action_layout)
 
+        # Usar QStackedWidget para mostrar formularios según la acción
         self.stacked_widget = QtWidgets.QStackedWidget()
 
-        # delete_segment
+        # Página para delete_segment: Solo se necesita el nombre del segmento
         delete_widget = QtWidgets.QWidget()
         delete_layout = QtWidgets.QFormLayout()
         self.delete_segment_edit = QtWidgets.QLineEdit()
@@ -54,18 +70,20 @@ class ConfigWindow(QtWidgets.QDialog):
         delete_widget.setLayout(delete_layout)
         self.stacked_widget.addWidget(delete_widget)
 
-        # add_segment
+        # Página para add_segment: Nuevo segmento, posición y valores
         add_widget = QtWidgets.QWidget()
         add_layout = QtWidgets.QFormLayout()
         self.add_segment_edit = QtWidgets.QLineEdit()
         self.add_position_edit = QtWidgets.QLineEdit()
         self.add_position_edit.setPlaceholderText("Número entero (opcional)")
+        self.add_values_edit = QtWidgets.QLineEdit()
         add_layout.addRow("Nuevo Segmento:", self.add_segment_edit)
         add_layout.addRow("Posición:", self.add_position_edit)
+        add_layout.addRow("Valores (separados por |):", self.add_values_edit)
         add_widget.setLayout(add_layout)
         self.stacked_widget.addWidget(add_widget)
 
-        # modify_field
+        # Página para modify_field: Segmento, índice y nuevo valor
         modify_widget = QtWidgets.QWidget()
         modify_layout = QtWidgets.QFormLayout()
         self.modify_segment_edit = QtWidgets.QLineEdit()
@@ -77,7 +95,7 @@ class ConfigWindow(QtWidgets.QDialog):
         modify_widget.setLayout(modify_layout)
         self.stacked_widget.addWidget(modify_widget)
 
-        # reorder_fields
+        # Página para reorder_fields: Segmento y nuevo orden
         reorder_widget = QtWidgets.QWidget()
         reorder_layout = QtWidgets.QFormLayout()
         self.reorder_segment_edit = QtWidgets.QLineEdit()
@@ -88,12 +106,12 @@ class ConfigWindow(QtWidgets.QDialog):
         reorder_widget.setLayout(reorder_layout)
         self.stacked_widget.addWidget(reorder_widget)
 
-        # copy_value
+        # Página para copy_value: Segmento fuente, campo fuente, segmento destino y campo destino
         copy_widget = QtWidgets.QWidget()
         copy_layout = QtWidgets.QFormLayout()
         self.copy_source_segment_edit = QtWidgets.QLineEdit()
-        self.copy_dest_segment_edit = QtWidgets.QLineEdit()
         self.copy_source_field_edit = QtWidgets.QLineEdit()
+        self.copy_dest_segment_edit = QtWidgets.QLineEdit()
         self.copy_dest_field_edit = QtWidgets.QLineEdit()
         copy_layout.addRow("Segmento fuente:", self.copy_source_segment_edit)
         copy_layout.addRow("Campo fuente:", self.copy_source_field_edit)
@@ -101,6 +119,19 @@ class ConfigWindow(QtWidgets.QDialog):
         copy_layout.addRow("Campo destino:", self.copy_dest_field_edit)
         copy_widget.setLayout(copy_layout)
         self.stacked_widget.addWidget(copy_widget)
+
+        # Página para agregar campos: Segmento, posición (opcional) y nuevos campos
+        agregar_widget = QtWidgets.QWidget()
+        agregar_layout = QtWidgets.QFormLayout()
+        self.agregar_segment_edit = QtWidgets.QLineEdit()
+        self.agregar_position_edit = QtWidgets.QLineEdit()
+        self.agregar_position_edit.setPlaceholderText("Número entero (opcional)")
+        self.agregar_values_edit = QtWidgets.QLineEdit()
+        agregar_layout.addRow("Segmento:", self.agregar_segment_edit)
+        agregar_layout.addRow("Posición (opcional):", self.agregar_position_edit)
+        agregar_layout.addRow("Nuevos Campos (separados por |):", self.agregar_values_edit)
+        agregar_widget.setLayout(agregar_layout)
+        self.stacked_widget.addWidget(agregar_widget)
 
         new_rule_layout.addWidget(self.stacked_widget)
         self.rule_type_combo.currentIndexChanged.connect(self.stacked_widget.setCurrentIndex)
@@ -126,7 +157,6 @@ class ConfigWindow(QtWidgets.QDialog):
     def add_new_rule(self):
         rule_type = self.rule_type_combo.currentText()
         new_rule = {"action": rule_type}
-
         try:
             if rule_type == "delete_segment":
                 segment = self.delete_segment_edit.text().strip()
@@ -144,6 +174,8 @@ class ConfigWindow(QtWidgets.QDialog):
                 pos_text = self.add_position_edit.text().strip()
                 if pos_text:
                     new_rule["position"] = int(pos_text)
+                if self.add_values_edit.text().strip():
+                    new_rule["values"] = self.add_values_edit.text().strip().split("|")
 
             elif rule_type == "modify_field":
                 segment = self.modify_segment_edit.text().strip()
@@ -163,7 +195,7 @@ class ConfigWindow(QtWidgets.QDialog):
                     QtWidgets.QMessageBox.warning(self, "Error", "Todos los campos son obligatorios.")
                     return
                 new_rule["segment"] = segment
-                new_rule["new_order"] = [int(i.strip()) for i in order_text.split(',')]
+                new_rule["new_order"] = [int(i.strip()) for i in order_text.split(',') if i.strip().isdigit()]
 
             elif rule_type == "copy_value":
                 source_segment = self.copy_source_segment_edit.text().strip()
@@ -178,6 +210,17 @@ class ConfigWindow(QtWidgets.QDialog):
                 new_rule["dest_segment"] = dest_segment
                 new_rule["dest_field"] = int(dest_field)
 
+            elif rule_type == "agregar_campos":
+                segment = self.agregar_segment_edit.text().strip()
+                if not segment:
+                    QtWidgets.QMessageBox.warning(self, "Error", "El campo 'Segmento' es obligatorio para agregar campos.")
+                    return
+                new_rule["segment"] = segment
+                pos_text = self.agregar_position_edit.text().strip()
+                if pos_text:
+                    new_rule["start_index"] = int(pos_text)
+                if self.agregar_values_edit.text().strip():
+                    new_rule["values"] = self.agregar_values_edit.text().strip().split("|")
             else:
                 QtWidgets.QMessageBox.warning(self, "Error", "Acción no reconocida.")
                 return

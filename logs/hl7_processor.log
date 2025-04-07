@@ -234,3 +234,95 @@
 2025-04-06 20:07:54,223 - INFO - Monitorización iniciada.
 2025-04-06 20:08:05,051 - INFO - Monitorización detenida.
 2025-04-06 20:08:05,052 - INFO - Monitorización detenida.
+2025-04-06 23:03:32,340 - INFO - Aplicación iniciada.
+2025-04-06 23:05:38,634 - INFO - Aplicación iniciada.
+2025-04-06 23:05:48,532 - INFO - Configuración activa: config-prueba
+2025-04-06 23:07:51,875 - INFO - Configuraciones guardadas.
+2025-04-06 23:07:51,876 - INFO - Configuración 'config-prueba' actualizada.
+2025-04-06 23:08:08,710 - INFO - Creación de configuración cancelada o sin nombre ingresado.
+2025-04-06 23:08:11,971 - INFO - No hay monitorización activa.
+2025-04-06 23:08:37,599 - INFO - Directorio de entrada: C:/Users/ivanw/Desktop/origen
+2025-04-06 23:08:42,659 - INFO - Directorio de salida: C:/Users/ivanw/Desktop/destino
+2025-04-06 23:08:50,981 - INFO - Carpeta de backups: C:/Users/ivanw/Desktop/backups
+2025-04-06 23:11:14,955 - INFO - Configuración activa: config-prueba
+2025-04-06 23:11:29,296 - INFO - Configuraciones guardadas.
+2025-04-06 23:11:29,297 - INFO - Nueva configuración 'config-prueba2' creada.
+2025-04-06 23:11:33,066 - INFO - Configuración activa: config-prueba2
+2025-04-06 23:15:00,260 - INFO - Configuraciones guardadas.
+2025-04-06 23:15:00,261 - INFO - Configuración 'config-prueba2' actualizada.
+2025-04-07 01:16:27,259 - INFO - Configuraciones guardadas.
+2025-04-07 01:16:27,260 - INFO - Configuración 'config-prueba2' actualizada.
+2025-04-07 01:17:02,206 - INFO - Iniciada la monitorización en: C:/Users/ivanw/Desktop/origen
+2025-04-07 01:17:02,206 - INFO - Monitorización iniciada.
+2025-04-07 01:17:19,232 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\cancellation.hl7
+2025-04-07 01:17:19,243 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\cancellation.hl7
+2025-04-07 01:17:19,245 - INFO - Eliminado segmento: NTE
+2025-04-07 01:17:19,245 - INFO - Segmento agregado en la posición 6: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 01:17:19,245 - INFO - Campo modificado en segmento PV1: índice 7 de '' a '^ESTES^KOVIN'
+2025-04-07 01:17:19,246 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\cancellation.hl7
+2025-04-07 01:17:19,252 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\cancellation.hl7
+2025-04-07 01:17:19,255 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\HL7BillingXLink251-20240228200438.hl7
+2025-04-07 01:17:19,256 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\HL7BillingXLink251-20240228200438.hl7
+2025-04-07 01:17:19,276 - INFO - Eliminado segmento: NTE
+2025-04-07 01:17:19,276 - INFO - Valor copiado de IN1[2] a PID[22]: Plan not defined
+2025-04-07 01:17:19,276 - INFO - Segmento agregado en la posición 6: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 01:17:19,276 - INFO - Campo modificado en segmento PV1: índice 7 de '1598743973^Jones^Alan^^^^DO^^^^^^NPI' a '^ESTES^KOVIN'
+2025-04-07 01:17:19,277 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\HL7BillingXLink251-20240228200438.hl7
+2025-04-07 01:17:19,278 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\HL7BillingXLink251-20240228200438.hl7
+2025-04-07 01:17:19,278 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\MFD-20240612201445.hl7
+2025-04-07 01:17:19,278 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\MFD-20240612201445.hl7
+2025-04-07 01:17:19,292 - INFO - Eliminado segmento: NTE
+2025-04-07 01:17:19,292 - INFO - Valor copiado de IN1[2] a PID[22]: 1352^AETNA
+2025-04-07 01:17:19,292 - INFO - Segmento agregado en la posición 6: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 01:17:19,292 - INFO - Campo modificado en segmento PV1: índice 7 de '1245315332^Hermansen^Layne^^^^DO^^^^^^NPI' a '^ESTES^KOVIN'
+2025-04-07 01:17:19,293 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\MFD-20240612201445.hl7
+2025-04-07 01:17:19,294 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\MFD-20240612201445.hl7
+2025-04-07 01:17:19,294 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\ORU-WP-C846211.hl7
+2025-04-07 01:17:19,294 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\ORU-WP-C846211.hl7
+2025-04-07 01:17:19,308 - INFO - Eliminado segmento: NTE
+2025-04-07 01:17:19,308 - INFO - Segmento agregado en la posición 21: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 01:17:19,308 - INFO - Campo modificado en segmento PV1: índice 7 de '1003990615^Tarkenton^Tim^^^Dr.^^^^^^^NPI' a '^ESTES^KOVIN'
+2025-04-07 01:17:19,310 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\ORU-WP-C846211.hl7
+2025-04-07 01:17:19,313 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\ORU-WP-C846211.hl7
+2025-04-07 01:17:19,313 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\RHWC-20231208-66816616540002-ORU.hl7
+2025-04-07 01:17:19,314 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\RHWC-20231208-66816616540002-ORU.hl7
+2025-04-07 01:17:19,331 - INFO - Eliminado segmento: NTE
+2025-04-07 01:17:19,331 - INFO - Segmento agregado en la posición 19: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 01:17:19,332 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\RHWC-20231208-66816616540002-ORU.hl7
+2025-04-07 01:17:19,337 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\RHWC-20231208-66816616540002-ORU.hl7
+2025-04-07 01:17:19,337 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\RHWC-20231212-66820388560004-ORU.hl7
+2025-04-07 01:17:19,337 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\RHWC-20231212-66820388560004-ORU.hl7
+2025-04-07 01:17:19,348 - INFO - Eliminado segmento: NTE
+2025-04-07 01:17:19,348 - INFO - Segmento agregado en la posición 19: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 01:17:19,349 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\RHWC-20231212-66820388560004-ORU.hl7
+2025-04-07 01:17:19,349 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\RHWC-20231212-66820388560004-ORU.hl7
+2025-04-07 01:17:19,350 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\s12-SIU-example.hl7
+2025-04-07 01:17:19,352 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\s12-SIU-example.hl7
+2025-04-07 01:17:19,363 - INFO - Eliminado segmento: NTE
+2025-04-07 01:17:19,364 - INFO - Segmento agregado en la posición 8: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 01:17:19,364 - INFO - Campo modificado en segmento PV1: índice 7 de 'CE' a '^ESTES^KOVIN'
+2025-04-07 01:17:19,364 - WARNING - El nuevo orden no coincide con el número de campos en el segmento AIL.
+2025-04-07 01:17:19,365 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\s12-SIU-example.hl7
+2025-04-07 01:17:19,370 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\s12-SIU-example.hl7
+2025-04-07 01:17:19,371 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\TEST_NAME_1223_010101010_Female_Color_WF_20200912100800_OD_20210316134125_0.100000001490116_0.hl7
+2025-04-07 01:17:19,371 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\TEST_NAME_1223_010101010_Female_Color_WF_20200912100800_OD_20210316134125_0.100000001490116_0.hl7
+2025-04-07 01:17:19,466 - INFO - Eliminado segmento: NTE
+2025-04-07 01:17:19,466 - INFO - Segmento agregado en la posición 7: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 01:17:19,511 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\TEST_NAME_1223_010101010_Female_Color_WF_20200912100800_OD_20210316134125_0.100000001490116_0.hl7
+2025-04-07 01:17:19,513 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\TEST_NAME_1223_010101010_Female_Color_WF_20200912100800_OD_20210316134125_0.100000001490116_0.hl7
+2025-04-07 01:17:36,796 - INFO - Monitorización detenida.
+2025-04-07 01:17:36,796 - INFO - Monitorización detenida.
+2025-04-07 01:17:39,028 - INFO - Iniciada la monitorización en: C:/Users/ivanw/Desktop/origen
+2025-04-07 01:17:39,028 - INFO - Monitorización iniciada.
+2025-04-07 01:18:21,324 - INFO - Monitorización detenida.
+2025-04-07 01:18:21,324 - INFO - Monitorización detenida.
+2025-04-07 01:30:57,737 - INFO - Iniciada la monitorización en: C:/Users/ivanw/Desktop/origen
+2025-04-07 01:30:57,737 - INFO - Monitorización iniciada.
+2025-04-07 01:31:09,633 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\s12.hl7
+2025-04-07 01:31:09,636 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\s12.hl7
+2025-04-07 01:31:09,636 - INFO - Eliminado segmento: NTE
+2025-04-07 01:31:09,637 - INFO - Segmento agregado en la posición 7: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 01:31:09,637 - INFO - Campo modificado en segmento PV1: índice 7 de '^Reynolds^Clayton^L^^^MD' a '^ESTES^KOVIN'
+2025-04-07 01:31:09,637 - INFO - Campos agregados al final del segmento RGS: ['3']
+2025-04-07 01:31:09,639 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\s12.hl7
+2025-04-07 01:31:09,647 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\s12.hl7
