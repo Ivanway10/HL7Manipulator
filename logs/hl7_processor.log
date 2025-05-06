@@ -326,3 +326,91 @@
 2025-04-07 01:31:09,637 - INFO - Campos agregados al final del segmento RGS: ['3']
 2025-04-07 01:31:09,639 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\s12.hl7
 2025-04-07 01:31:09,647 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\s12.hl7
+2025-04-07 16:55:30,622 - INFO - Aplicación iniciada.
+2025-04-07 16:55:43,724 - INFO - Directorio de entrada: C:/Users/ivanw/Desktop/destino
+2025-04-07 16:55:49,133 - INFO - Directorio de entrada: C:/Users/ivanw/Desktop/origen
+2025-04-07 16:55:53,895 - INFO - Directorio de salida: C:/Users/ivanw/Desktop/destino
+2025-04-07 16:55:59,179 - INFO - Carpeta de backups: C:/Users/ivanw/Desktop/backups
+2025-04-07 16:56:13,031 - INFO - Configuración activa: config-prueba2
+2025-04-07 16:56:18,826 - INFO - Iniciada la monitorización en: C:/Users/ivanw/Desktop/origen
+2025-04-07 16:56:18,826 - INFO - Monitorización iniciada.
+2025-04-07 16:58:27,853 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\cancellation.hl7
+2025-04-07 16:58:27,859 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\cancellation.hl7
+2025-04-07 16:58:27,870 - INFO - Eliminado segmento: NTE
+2025-04-07 16:58:27,871 - INFO - Segmento agregado en la posición 7: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 16:58:27,871 - INFO - Campo modificado en segmento PV1: índice 7 de '^ESTES^KOVIN' a '^ESTES^KOVIN'
+2025-04-07 16:58:27,872 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\cancellation.hl7
+2025-04-07 16:58:27,876 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\cancellation.hl7
+2025-04-07 16:58:27,877 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\HL7BillingXLink251-20240228200438.hl7
+2025-04-07 16:58:27,878 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\HL7BillingXLink251-20240228200438.hl7
+2025-04-07 16:58:27,892 - INFO - Eliminado segmento: NTE
+2025-04-07 16:58:27,892 - INFO - Valor copiado de IN1[2] a PID[22]: Plan not defined
+2025-04-07 16:58:27,892 - INFO - Segmento agregado en la posición 7: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 16:58:27,892 - INFO - Campo modificado en segmento PV1: índice 7 de '^ESTES^KOVIN' a '^ESTES^KOVIN'
+2025-04-07 16:58:27,893 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\HL7BillingXLink251-20240228200438.hl7
+2025-04-07 16:58:27,901 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\HL7BillingXLink251-20240228200438.hl7
+2025-04-07 16:58:27,901 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\MFD-20240612201445.hl7
+2025-04-07 16:58:27,903 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\MFD-20240612201445.hl7
+2025-04-07 16:58:27,939 - INFO - Eliminado segmento: NTE
+2025-04-07 16:58:27,939 - INFO - Valor copiado de IN1[2] a PID[22]: 1352^AETNA
+2025-04-07 16:58:27,940 - INFO - Segmento agregado en la posición 7: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 16:58:27,940 - INFO - Campo modificado en segmento PV1: índice 7 de '^ESTES^KOVIN' a '^ESTES^KOVIN'
+2025-04-07 16:58:27,940 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\MFD-20240612201445.hl7
+2025-04-07 16:58:27,943 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\MFD-20240612201445.hl7
+2025-04-07 16:58:27,943 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\ORU-WP-C846211.hl7
+2025-04-07 16:58:27,943 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\ORU-WP-C846211.hl7
+2025-04-07 16:58:27,962 - INFO - Eliminado segmento: NTE
+2025-04-07 16:58:27,962 - INFO - Segmento agregado en la posición 22: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 16:58:27,962 - INFO - Campo modificado en segmento PV1: índice 7 de '^ESTES^KOVIN' a '^ESTES^KOVIN'
+2025-04-07 16:58:27,964 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\ORU-WP-C846211.hl7
+2025-04-07 16:58:27,966 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\ORU-WP-C846211.hl7
+2025-04-07 16:58:27,966 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\RHWC-20231208-66816616540002-ORU.hl7
+2025-04-07 16:58:27,966 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\RHWC-20231208-66816616540002-ORU.hl7
+2025-04-07 16:58:27,980 - INFO - Eliminado segmento: NTE
+2025-04-07 16:58:27,980 - INFO - Segmento agregado en la posición 20: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 16:58:27,981 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\RHWC-20231208-66816616540002-ORU.hl7
+2025-04-07 16:58:27,983 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\RHWC-20231208-66816616540002-ORU.hl7
+2025-04-07 16:58:27,983 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\RHWC-20231212-66820388560004-ORU.hl7
+2025-04-07 16:58:27,983 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\RHWC-20231212-66820388560004-ORU.hl7
+2025-04-07 16:58:27,999 - INFO - Eliminado segmento: NTE
+2025-04-07 16:58:28,000 - INFO - Segmento agregado en la posición 20: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 16:58:28,000 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\RHWC-20231212-66820388560004-ORU.hl7
+2025-04-07 16:58:28,003 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\RHWC-20231212-66820388560004-ORU.hl7
+2025-04-07 16:58:28,003 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\s12.hl7
+2025-04-07 16:58:28,005 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\s12.hl7
+2025-04-07 16:58:28,017 - INFO - Eliminado segmento: NTE
+2025-04-07 16:58:28,017 - INFO - Segmento agregado en la posición 8: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 16:58:28,017 - INFO - Campo modificado en segmento PV1: índice 7 de '^ESTES^KOVIN' a '^ESTES^KOVIN'
+2025-04-07 16:58:28,017 - INFO - Campos insertados en el segmento RGS en la posición 2: ['3']
+2025-04-07 16:58:28,018 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\s12.hl7
+2025-04-07 16:58:28,022 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\s12.hl7
+2025-04-07 16:58:28,023 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\S12queNoPasó.hl7
+2025-04-07 16:58:28,024 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\S12queNoPasó.hl7
+2025-04-07 16:58:28,046 - INFO - Eliminado segmento: NTE
+2025-04-07 16:58:28,046 - INFO - Segmento agregado en la posición 7: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 16:58:28,046 - INFO - Campos agregados al final del segmento RGS: ['3']
+2025-04-07 16:58:28,047 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\S12queNoPasó.hl7
+2025-04-07 16:58:28,049 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\S12queNoPasó.hl7
+2025-04-07 16:58:28,049 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\S12queSiPasó.hl7
+2025-04-07 16:58:28,050 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\S12queSiPasó.hl7
+2025-04-07 16:58:28,074 - INFO - Eliminado segmento: NTE
+2025-04-07 16:58:28,075 - INFO - Segmento agregado en la posición 8: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 16:58:28,075 - INFO - Campos agregados al final del segmento RGS: ['3']
+2025-04-07 16:58:28,075 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\S12queSiPasó.hl7
+2025-04-07 16:58:28,079 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\S12queSiPasó.hl7
+2025-04-07 16:58:28,079 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\s12-SIU-example.hl7
+2025-04-07 16:58:28,079 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\s12-SIU-example.hl7
+2025-04-07 16:58:28,110 - INFO - Eliminado segmento: NTE
+2025-04-07 16:58:28,110 - INFO - Segmento agregado en la posición 9: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 16:58:28,110 - INFO - Campo modificado en segmento PV1: índice 7 de '^ESTES^KOVIN' a '^ESTES^KOVIN'
+2025-04-07 16:58:28,110 - INFO - Campos reordenados en segmento AIL: nuevo orden [2, 1, 3, 5, 4, 6]
+2025-04-07 16:58:28,111 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\s12-SIU-example.hl7
+2025-04-07 16:58:28,115 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\s12-SIU-example.hl7
+2025-04-07 16:58:28,115 - INFO - Archivo detectado: C:/Users/ivanw/Desktop/origen\TEST_NAME_1223_010101010_Female_Color_WF_20200912100800_OD_20210316134125_0.100000001490116_0.hl7
+2025-04-07 16:58:28,115 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\TEST_NAME_1223_010101010_Female_Color_WF_20200912100800_OD_20210316134125_0.100000001490116_0.hl7
+2025-04-07 16:58:28,179 - INFO - Eliminado segmento: NTE
+2025-04-07 16:58:28,179 - INFO - Segmento agregado en la posición 8: ['ZEF', '1', '2', '3', '4', '', '', '', '', '', '', '555']
+2025-04-07 16:58:28,216 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\TEST_NAME_1223_010101010_Female_Color_WF_20200912100800_OD_20210316134125_0.100000001490116_0.hl7
+2025-04-07 16:58:28,230 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\TEST_NAME_1223_010101010_Female_Color_WF_20200912100800_OD_20210316134125_0.100000001490116_0.hl7
+2025-04-07 16:58:56,456 - INFO - Monitorización detenida.
+2025-04-07 16:58:56,457 - INFO - Monitorización detenida.
