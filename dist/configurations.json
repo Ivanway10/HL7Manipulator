@@ -95,5 +95,21 @@
                 "3"
             ]
         }
+    ],
+    "CONDIOCIONLA": [
+        {
+            "condition": {
+                "segment": "MSH",
+                "field_index": 10,
+                "operator": "equals",
+                "value": "1010"
+            },
+            "actions": [
+                {
+                    "action": "delete_segment",
+                    "segment": "PID"
+                }
+            ]
+        }
     ]
 }

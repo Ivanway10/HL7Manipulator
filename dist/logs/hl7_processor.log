@@ -10,3 +10,36 @@
 2025-04-16 13:39:43,935 - INFO - Aplicación iniciada.
 2025-04-16 13:43:12,077 - INFO - Aplicación iniciada.
 2025-05-01 17:10:13,524 - INFO - Aplicación iniciada.
+2025-05-19 18:30:36,055 - INFO - Aplicación iniciada.
+2025-05-19 18:30:40,931 - INFO - Configuración activa: config-prueba
+2025-05-19 18:31:02,288 - INFO - Configuraciones guardadas.
+2025-05-19 18:31:02,288 - INFO - Nueva configuración 'CONDIOCIONLA' creada.
+2025-05-19 18:31:09,915 - INFO - Configuración activa: CONDIOCIONLA
+2025-05-19 23:21:25,944 - INFO - Aplicación iniciada.
+2025-05-19 23:22:00,670 - INFO - Configuración activa: CONDIOCIONLA
+2025-05-19 23:23:55,386 - INFO - Configuraciones guardadas.
+2025-05-19 23:23:55,387 - INFO - Configuración 'CONDIOCIONLA' actualizada.
+2025-05-19 23:24:16,492 - INFO - Directorio de entrada: C:/Users/ivanw/Desktop/origen
+2025-05-19 23:24:22,471 - INFO - Directorio de salida: C:/Users/ivanw/Desktop/destino
+2025-05-19 23:27:00,265 - INFO - Carpeta de backups: C:/Users/ivanw/Desktop/backups
+2025-05-19 23:38:21,375 - INFO - Iniciada monitorización en: C:/Users/ivanw/Desktop/origen
+2025-05-19 23:38:21,375 - INFO - Monitorización iniciada.
+2025-05-19 23:38:25,662 - INFO - Archivo detectado (created): C:/Users/ivanw/Desktop/origen\20231116_13_20_39_PraxisEMRAppointmentEvent_20231117_09_00_00_Brown, Susan Female, (11).hl7
+2025-05-19 23:38:25,684 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\20231116_13_20_39_PraxisEMRAppointmentEvent_20231117_09_00_00_Brown, Susan Female, (11).hl7
+2025-05-19 23:38:25,761 - INFO - [COND] MSH.10 == '1010' -> True
+2025-05-19 23:38:25,761 - INFO - [RULE] delete_segment PID
+2025-05-19 23:38:25,764 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\20231116_13_20_39_PraxisEMRAppointmentEvent_20231117_09_00_00_Brown, Susan Female, (11).hl7
+2025-05-19 23:38:25,768 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\20231116_13_20_39_PraxisEMRAppointmentEvent_20231117_09_00_00_Brown, Susan Female, (11).hl7
+2025-05-19 23:38:27,804 - INFO - Archivo detectado (created): C:/Users/ivanw/Desktop/origen\20231116_13_24_05_PraxisEMRAppointmentEvent_20231116_15_25_00_Brown, Susan Female, (11).hl7
+2025-05-19 23:38:27,804 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\20231116_13_24_05_PraxisEMRAppointmentEvent_20231116_15_25_00_Brown, Susan Female, (11).hl7
+2025-05-19 23:38:27,845 - INFO - [COND] MSH.10 == '1010' -> True
+2025-05-19 23:38:27,845 - INFO - [RULE] delete_segment PID
+2025-05-19 23:38:27,845 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\20231116_13_24_05_PraxisEMRAppointmentEvent_20231116_15_25_00_Brown, Susan Female, (11).hl7
+2025-05-19 23:38:27,845 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\20231116_13_24_05_PraxisEMRAppointmentEvent_20231116_15_25_00_Brown, Susan Female, (11).hl7
+2025-05-19 23:38:29,609 - INFO - Archivo detectado (created): C:/Users/ivanw/Desktop/origen\20231116_13_30_28_PraxisEMRAppointmentEvent_20231116_15_35_00_Brown, Susan Female, (11).hl7
+2025-05-19 23:38:29,609 - INFO - Procesando archivo: C:/Users/ivanw/Desktop/origen\20231116_13_30_28_PraxisEMRAppointmentEvent_20231116_15_35_00_Brown, Susan Female, (11).hl7
+2025-05-19 23:38:29,649 - INFO - [COND] MSH.10 == '1010' -> False
+2025-05-19 23:38:29,662 - INFO - Archivo HL7 escrito en: C:/Users/ivanw/Desktop/destino\20231116_13_30_28_PraxisEMRAppointmentEvent_20231116_15_35_00_Brown, Susan Female, (11).hl7
+2025-05-19 23:38:29,668 - INFO - Archivo procesado. Original movido a backups: C:/Users/ivanw/Desktop/backups\20231116_13_30_28_PraxisEMRAppointmentEvent_20231116_15_35_00_Brown, Susan Female, (11).hl7
+2025-05-19 23:38:37,356 - INFO - Monitorización detenida.
+2025-05-19 23:38:37,358 - INFO - Monitorización detenida.
